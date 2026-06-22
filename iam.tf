@@ -23,5 +23,5 @@ resource "aws_iam_user_policy_attachment" "ec2_readonly" {
   user       = aws_iam_user.users[each.value].name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess"
 }
-*/
+
 
