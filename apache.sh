@@ -1,7 +1,5 @@
 #! /bin/bash
-yum install httpd git -y
-systemctl start httpd
-systemctl status httpd
-cd /var/www/html
+apt update
+apt install nginx  -y
 git clone https://github.com/karishma1521success/swiggy-clone.git
-mv swiggy-clone/* .
+mv swiggy-clone/* /var/www/html/
